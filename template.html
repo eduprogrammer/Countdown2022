@@ -1,0 +1,65 @@
+<!--
+    Copyright 2021. Eduardo Programador
+    www.eduardoprograamdor.com
+    consultoria@eduardoprogramador.com
+
+    All rights reserved.
+
+    This file is only an example of CountDown2022 usage.
+    You must provide your own implementation on your website.
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="new_year_style.css">
+    <script type="text/javascript" src="new_year_counter.js"></script>
+</head>
+
+<header>
+
+    <div class="new_year_counter" onclick="window.open('https://github.com/eduprogrammer/Countdown2022');">
+        <table class="nyc_table" cellspacing="0">
+            <tr>
+                <th class="tits" colspan="3">Contagem Regressiva - 2022</th>                        
+            </tr>
+            <tr>
+                <th colspan="3" class="remain">Falta(m)</th>
+            </tr>
+            <tr>
+                <td class="nyc_n" id="nyc_hour">00</td>
+                <td class="nyc_n" id="nyc_min">00</td>
+                <td class="nyc_n" id="nyc_sec">00</td>
+            </tr>
+            <tr>
+                <td class="nyc_sub">Hora(s)</td>
+                <td class="nyc_sub">Minuto(s)</td>
+                <td class="nyc_sub">Segundo(s)</td>
+            </tr>
+            <tr>
+                <th colspan="3" class="credit">Ver Página Oficial</th>
+            </tr>
+        </table>
+    </div>
+
+</header>
+
+<body>
+
+    <script>
+        let countYear = new CountNewYear();
+
+            countYear.remains(function (hr, min, sec) {
+
+                document.getElementById("nyc_hour").innerText = hr;
+                document.getElementById("nyc_min").innerText = min;
+                document.getElementById("nyc_sec").innerText = sec;
+
+            }, function () {
+                alert("Welcome, 2022");
+            });
+    </script>
+
+</body>
+
+</html>

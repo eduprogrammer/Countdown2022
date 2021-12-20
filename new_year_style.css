@@ -1,0 +1,57 @@
+/*
+    Copyright 2021. Eduardo Programador
+    www.eduardoprogramador.com
+    All rights reserved.
+*/
+
+.new_year_counter {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: center;
+    background-color: rgba(47, 54, 58,0.7);
+    border-radius: 10%;    
+    outline-style: none;
+    outline-width: 0;    
+    padding: 3px;
+}
+
+.nyc_table .nyc_n, .nyc_table .nyc_sub {
+    border: 2px solid white;
+    border-radius: 25%;
+    color: white;
+    padding: 7px;    
+}
+
+.new_year_counter:hover {
+    cursor: pointer;
+    background-color: rgba(40, 64, 70, 0.815);
+}
+
+.new_year_counter .nyc_n {
+    font-weight: bold;
+    font-size: 20px;
+    color: unset;
+    color: yellowgreen;
+    padding: 20px 7px;
+}
+
+.new_year_counter .tits {
+    color: crimson;    
+}
+
+.new_year_counter .remain {
+    color: yellowgreen;
+    animation: tiktok 0.5s linear infinite;
+}
+
+.new_year_counter .credit {
+    color: darkgrey;
+}
+
+@keyframes tiktok {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
